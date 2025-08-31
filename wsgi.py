@@ -1,7 +1,4 @@
 # wsgi.py
-from qc_app import app
+from qc_app import app  # فقط نستورد التطبيق
 
-# اختياري: مسار بسيط للصحة لو ما كان موجود
-@app.get("/health")
-def health():
-    return "ok"
+# ما في داعي تضيف أي routes هنا
